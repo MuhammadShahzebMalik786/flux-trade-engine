@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-gold-50: #fdfaf2;
+  --color-gold-100: #fbf5e6;
+  --color-gold-200: #f5e4bd;
+  --color-gold-300: #eecf87;
+  --color-gold-400: #e4b553;
+  --color-gold-500: #d4af37;
+  --color-gold-600: #bfa02f;
+  --color-gold-700: #9e8324;
+  
+  --color-crypto-dark: #06080c;
+  --color-crypto-card: #0b0c10;
+  --color-crypto-emerald: #00e676;
+  --color-crypto-crimson: #ff1744;
+}
+
+/* Custom Scrollbar Styling for Terminal Feeds */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.15);
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.3);
+}
+
+/* Custom transitions and glassmorphism helpers */
+.backdrop-blur-xl {
+  backdrop-filter: blur(24px);
+}
+
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+}
